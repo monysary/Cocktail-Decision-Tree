@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(48, 48, 48);
 }
 
 h1 {
@@ -12,11 +12,22 @@ h1 {
     color: white;
 }
 
+/* Container and children*/
 .container {
     background-color: rgb(224, 224, 224);
     width: 700px;
     height: 500px;
     margin: 0 auto;
+    display: grid;
+    grid-template-rows: 150px 200px 150px;
+}
+
+#choose {
+    align-self: flex-end;
 }
 
 /* General styling */
+.grid-align-center {
+    align-self: center;
+}
+
