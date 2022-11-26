@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(94, 94, 94);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px;
+    color: white;
+}
+
+.container {
+    background-color: rgb(224, 224, 224);
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* General styling */

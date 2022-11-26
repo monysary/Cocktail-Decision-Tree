@@ -1,4 +1,4 @@
-questions = {
+choices = {
     choice1: ["Light", "Dark"],
     choice2: ["Boozy", "Refreshing"],
     choice3: ["Sweet", "Complex"],
