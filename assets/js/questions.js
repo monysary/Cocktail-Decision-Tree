@@ -21,6 +21,10 @@ questions = {
     DRCM: ["Live on the beach", "Live in a cabin"]
 }
 
+// Math: index = +1 or +2 -> *2-1 or *2 -> *2-1 or *2 -> *2-1 or *2 -> *2-1 or *2
+
+// Call drinks array with index-1
+
 drinksArr = [
     "Espresso Martini",
     "Grasshopper",
