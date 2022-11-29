@@ -1,3 +1,4 @@
+/* General styling */
 * {
     text-align: center;
 }
@@ -12,25 +13,60 @@ h1 {
     color: white;
 }
 
-/* Container and children*/
-.container {
-    background-color: rgb(224, 224, 224);
-    width: 700px;
-    height: 500px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 150px 200px 150px;
-}
-
-#choose {
-    align-self: flex-end;
-}
-
-/* General styling */
 .grid-align-center {
     align-self: center;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+#choose {
+    align-self: flex-end;
+}
+
+/* Flip card styling */
+.flip-card {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 600px;
+    height: 500px;
+    perspective: 3000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
 }
