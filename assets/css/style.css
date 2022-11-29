@@ -31,3 +31,6 @@ h1 {
     align-self: center;
 }
 
+button:hover {
+    cursor: pointer;
+}
