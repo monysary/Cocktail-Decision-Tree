@@ -10,17 +10,19 @@ var finalIndex = 0;
 function displayChoice() {
     option1.textContent = choices[choiceIndex][0];
     option2.textContent = choices[choiceIndex][1];
-    console.log(choiceIndex);
 }
-displayChoice()
 
 // Display final questions function
 function displayQues() {
     finalIndex--;
     option1.textContent = questions[finalIndex][0];
     option2.textContent = questions[finalIndex][1];
-    console.log("choice: " + choiceIndex);
     console.log("final: " + finalIndex);
+}
+
+// Display drink
+function displayDrink() {
+
 }
 
 // Event listener for choosing options
@@ -33,12 +35,15 @@ option1.addEventListener("click", function() {
         finalIndex *= 2;
         finalIndex--;
         displayChoice();
+    } else if (choiceIndex === 5) {
+        // Call function to display drinks
     } else {
         finalIndex *= 2;
         finalIndex--;
         displayQues()
     }
     choiceIndex++;
+    console.log("choice: " + choiceIndex);
 })
 
 option2.addEventListener("click", function() {
@@ -49,9 +54,14 @@ option2.addEventListener("click", function() {
     } else if (choiceIndex > 0 && choiceIndex < 4) {
         finalIndex *= 2;
         displayChoice()
+    } else if (choiceIndex === 5) {
+        // Call function to display drinks
     } else {
         finalIndex *= 2;
         displayQues()
     }
     choiceIndex++;
+    console.log("choice: " + choiceIndex);
 })
+
+displayChoice()
