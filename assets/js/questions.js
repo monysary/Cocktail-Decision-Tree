@@ -1,11 +1,11 @@
-choices = [
+var choices = [
     ["Light", "Dark"],
     ["Boozy", "Refreshing"],
     ["Sweet", "Complex"],
     ["Vintage", "Modern"],
 ]
 
-questions = [
+var questions = [
     ["Move to a new city every year", "Never leave your hometown"], //1,2
     ["In jail for a year", "Lose a year off your life"], //3,4
     ["Covered in scales", "Covered in fur"], //5,6
@@ -28,7 +28,7 @@ questions = [
 
 // Call drinks array with index-1
 
-drinksArr = [
+var drinksArr = [
     "Espresso Martini", //1
     "Grasshopper", //2
     "Blue Motorcycle", //3
