@@ -13,19 +13,25 @@ h1 {
     color: white;
 }
 
-.grid-align-center {
-    align-self: center;
-}
-
 button:hover {
     cursor: pointer;
 }
 
-#choose {
-    align-self: flex-end;
+/* Card front and back styling */
+.front {
+    display: grid;
+    grid-template-rows: 175px 150px 175px;
 }
 
-/* Flip card styling */
+.grid-align-center {
+    place-self: center;
+}
+
+.back {
+    display: grid;
+}
+
+/* Card flip animation styling */
 .flip-card {
     margin: 0 auto;
     background-color: transparent;
@@ -42,6 +48,7 @@ button:hover {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    /* transform: rotateY(180deg); */
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
