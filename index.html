@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drink Your Own Adventure</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
-        <h1>Drink Your Own Adventure</h1>
+        <p class="title">DRINK YOUR OWN ADVENTURE</p>
     </header>
 
     <main>
-        <div class="flip-card container">
-            <div class="flip-card-inner" id="flip-the-card">
-                <div class="flip-card-front flip-card-style front">
-                    <section class="grid-align-center">
-                        <h2>Pick your poison</h2>
-                    </section>
+        <div class="line"></div>
 
-                    <section class="grid-align-center">
-                        <button id="option1" class="button-style">Choice 1</button>
-                        <span class="span">or</span>
-                        <button id="option2" class="button-style">Choice 2</button>
-                    </section>
+        <section class="">
+            <p class="heading">Pick your poison</p>
+        </section>
 
-                    <section class="grid-align-center">
-                        Choice history
-                    </section>
-                </div>
-                <div class="flip-card-back flip-card-style back">
-                    <h3 id="final-drink" class="grid-align-center">This is the back</h3>
-                    <button id="restart-btn" class="grid-align-center button-style">Restart</button>
-                </div>
-            </div>
-        </div>
-
+        <section class="button-area">
+            <button id="option1" class="button-style">Choice 1</button>
+            <button id="option2" class="button-style">Choice 2</button>
+            <button id="restart-btn" class="button-style display-none">Restart</button>
+        </section>
     </main>
 
-    <footer>Copyright (c) 2022 monysary</footer>
-    
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

@@ -1,95 +1,59 @@
 /* General styling */
 * {
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(70, 70, 70), black);
+    background-image: linear-gradient(to bottom right, rgba(85, 85, 85, 1), rgba(0, 0, 0, 1));
 }
 
-h1 {
+.title {
+    font-size: 70px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    color: #C5C5C5;
+}
+
+.line {
+    background-color: #CD9A56;
+    margin: 0 auto;
+    height: 3px;
+    margin: 0px 20% 80px 20%;
+}
+
+.heading {
     font-size: 50px;
-    margin: 50px 10% 50px 10%;
-    padding-bottom: 50px;
-    color: #d4d4d4;
-    border-bottom: 3px solid #ddac17;
+    color: #C5C5C5;
+    margin-bottom: 140px;
 }
 
-h2 {
+/* Buttons */
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.button-style {
     font-size: 30px;
-}
-
-h3 {
-    font-size: 40px;
+    font-weight: bold;
+    width: 240px;
+    height: 64px;
+    background-image: linear-gradient(to bottom, rgba(228, 182, 115, 1), rgba(179, 122, 53, 1));
+    border: none;
+    border-radius: 5px;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-.span {
-    margin: 0px 50px;
-}
-
-/* Card front and back styling */
-.front {
-    display: grid;
-    grid-template-rows: 175px 150px 175px;
-}
-
-.grid-align-center {
-    place-self: center;
-}
-
 .back {
     display: grid;
 }
 
-/* Card flip animation styling */
-.flip-card {
-    margin: 0 auto;
-    background-color: transparent;
-    width: 600px;
-    height: 500px;
-    perspective: 3000px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    /* transform: rotateY(180deg); */
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-/* Style the front side */
-.flip-card-style {
-    border-radius: 20px;
-    background-image: linear-gradient(to bottom left, #e9e9e9, #707070);
-}
-
-/* Style the back side */
-.flip-card-back {
-    transform: rotateY(180deg);
-}
-
-/* Button styling */
-.button-style {
-    width: 120px;
-    height: 50px;
-    background-image: linear-gradient(to bottom right, #dfbd69, #926f34);
-    border-radius: 5px;
-    border: 0px;
-    box-shadow: 0px 1px 6px 0px black;
+/* Display none */
+.display-none {
+    display: none;
 }
