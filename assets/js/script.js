@@ -3,6 +3,8 @@ var option1 = document.querySelector("#option1");
 var option2 = document.querySelector("#option2");
 var finalDrink = document.querySelector("#final-drink");
 var restartBtn = document.querySelector("#restart-btn");
+var title = document.querySelector("#title");
+var line = document.querySelector("#line");
 
 // Index variables for pulling questions and drinks
 var choiceIndex = 0;
@@ -19,6 +21,11 @@ function displayQues() {
     finalIndex--;
     option1.textContent = questions[finalIndex][0];
     option2.textContent = questions[finalIndex][1];
+    finalDrink.textContent = "Final Choice"
+    title.setAttribute("class", "display-none");
+    line.setAttribute("class", "display-none");
+    option1.setAttribute("class", "button-final");
+    option2.setAttribute("class", "button-final");
 }
 
 // Display drink

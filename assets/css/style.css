@@ -47,12 +47,20 @@ body {
     border-radius: 5px;
 }
 
-button:hover {
-    cursor: pointer;
+.button-final {
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+    width: 400px;
+    height: 100px;
+    background: none;
+    padding: 10px;
+    border: 3px solid #CD9A56;
+    border-radius: 5px;
 }
 
-.back {
-    display: grid;
+button:hover {
+    cursor: pointer;
 }
 
 /* Display none */
