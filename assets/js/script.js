@@ -31,13 +31,16 @@ function displayQues() {
 // Display drink
 function displayDrink() {
     finalDrink.textContent = drinksArr[finalIndex];
+    option1.setAttribute("class", "display-none");
+    option2.setAttribute("class", "display-none");
+    restartBtn.setAttribute("class", "button-style");
 }
 
 // Restart button function
 function restartAdv() {
     choiceIndex = 0;
     finalIndex = 0;
-    displayChoice();
+    location.reload();
 }
 
 // Event listener for pressing restart button
