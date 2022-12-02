@@ -12,14 +12,13 @@ body {
 
 .title {
     font-size: 70px;
+    margin-top: 100px;
     margin-bottom: 50px;
-    padding-top: 100px;
     color: #C5C5C5;
 }
 
 .line {
     background-color: #CD9A56;
-    margin: 0 auto;
     height: 3px;
     margin: 0px 20% 80px 20%;
 }
@@ -39,7 +38,6 @@ body {
 
 .button-style {
     font-size: 30px;
-    font-weight: bold;
     width: 240px;
     height: 64px;
     background-image: linear-gradient(to bottom, rgba(228, 182, 115, 1), rgba(179, 122, 53, 1));
@@ -66,4 +64,37 @@ button:hover {
 /* Display none */
 .display-none {
     display: none;
+}
+
+/* Mobile response media query */
+@media screen and (max-width: 800px) {
+    body {
+        display: grid;
+        grid-template-rows: 340px auto;
+    }
+    
+    .title {
+        font-size: 50px;
+        margin: 70px 12% 60px 12%;
+    }
+    
+    .line {
+        margin: 0px 10%;
+    }
+    
+    .heading {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+    
+    .button-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .button-final {
+        font-size: 25px;
+        width: 300px;
+    }
 }
