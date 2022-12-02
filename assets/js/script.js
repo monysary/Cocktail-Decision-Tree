@@ -2,7 +2,6 @@
 var option1 = document.querySelector("#option1");
 var option2 = document.querySelector("#option2");
 var finalDrink = document.querySelector("#final-drink");
-var flipCard = document.querySelector("#flip-the-card");
 var restartBtn = document.querySelector("#restart-btn");
 
 // Index variables for pulling questions and drinks
@@ -25,7 +24,6 @@ function displayQues() {
 // Display drink
 function displayDrink() {
     finalDrink.textContent = drinksArr[finalIndex];
-    flipCard.setAttribute("style", "transform: rotateY(180deg);");
 }
 
 // Restart button function
@@ -33,7 +31,6 @@ function restartAdv() {
     choiceIndex = 0;
     finalIndex = 0;
     displayChoice();
-    flipCard.setAttribute("style", "transform: rotateY(360deg);");
 }
 
 // Event listener for pressing restart button
