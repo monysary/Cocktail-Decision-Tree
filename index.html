@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -23,8 +24,23 @@
         <p id="final-drink" class="heading">Pick your poison</p>
 
         <section class="button-area">
-            <button id="option1" class="button-style">Choice 1</button>
-            <button id="option2" class="button-style">Choice 2</button>
+            <button id="option1" class="button-style">
+                <div id="textBtn1" class="text-button">
+                    <div>Light</div>
+                    <div>Boozy</div>
+                    <div>Sweet</div>
+                    <div>Vintage</div>
+                </div>
+            </button>
+            
+            <button id="option2" class="button-style">
+                <div id="textBtn2" class="text-button">
+                    <div>Dark</div>
+                    <div>Refreshing</div>
+                    <div>Complex</div>
+                    <div>Modern</div>
+                </div>
+            </button>
             <button id="restart-btn" class="button-style display-none">Restart</button>
         </section>
     </main>
