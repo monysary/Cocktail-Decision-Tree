@@ -1,14 +1,14 @@
 // DOM variables
-var option1 = document.querySelector("#option1");
-var option2 = document.querySelector("#option2");
-var finalDrink = document.querySelector("#final-drink");
-var restartBtn = document.querySelector("#restart-btn");
-var title = document.querySelector("#title");
-var line = document.querySelector("#line");
+const option1 = document.querySelector("#option1");
+const option2 = document.querySelector("#option2");
+const finalDrink = document.querySelector("#final-drink");
+const restartBtn = document.querySelector("#restart-btn");
+const title = document.querySelector("#title");
+const line = document.querySelector("#line");
 
 // Index variables for pulling questions and drinks
-var choiceIndex = 0;
-var finalIndex = 0;
+let choiceIndex = 0;
+let finalIndex = 0;
 
 // Display options function
 function displayChoice() {
