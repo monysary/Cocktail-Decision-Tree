@@ -17,7 +17,7 @@ const questions = [
     ["Average person now", "King 2,500 years ago"], //17,18
     ["Never pay for food", "Never pay for travel"], //19,20
     ["Wedding/tux every day", "Pajamas every day"], //21,22
-    ["All birds try to attach you", "All dogs try to attack you"], //23,24
+    ["All birds try to attack you", "All dogs try to attack you"], //23,24
     ["Only RT movies with 94% or lower", "Only RT movies with 95% or higher"], //25,26
     ["Lose your other friends", "Lose you best friend"], //27,28
     ["No search engines", "No texting"], //29,30
@@ -60,36 +60,36 @@ const drinksArr = [
 ]
 
 const drinksIngred = [
-    "Vodka\nKalua\nSyrup\nFull Espresso", //1
-    "Cacao\nMenthe\nCream", //2
-    "Tequila\nVodka\nGin\nrum\nBlue Curacao\nSweet & Sour Mix", //3
-    "Melon Liqueur\nSweet & Sour Mix\nVodka\nSoda", //4
-    "Tequila\nLime Juice\nAgave Syrup\nPinch Salt", //5
-    "Gin\nVermouth\nCompari", //6
-    "Dark Rum\nOverproof Rum\nTriple Sec\nOrgeat\nLime Juice\nSyrup", //7
-    "White Rum\nCoconut Cream\nPineapple Juice", //8
-    "Tequila\nGrapefruit Soda\nSplash Lime\nSalt", //9
-    "Vodka\nLime Juice\nGinger Beer", //10
-    "Gin\nLemon Juice\nOJ\nHoney Syrup", //11
+    "Vodka\r\nKalua\r\nSyrup\r\nFull Espresso", //1
+    "Cacao\r\nMenthe\r\nCream", //2
+    "Tequila\r\nVodka\r\nGin\r\nrum\r\nBlue Curacao\r\nSweet & Sour Mix", //3
+    "Melon Liqueur\r\nSweet & Sour Mix\r\nVodka\r\nSoda", //4
+    "Tequila\r\nLime Juice\r\nAgave Syrup\r\nPinch Salt", //5
+    "Gin\r\nVermouth\r\nCompari", //6
+    "Dark Rum\r\nOverproof Rum\r\nTriple Sec\r\nOrgeat\r\nLime Juice\r\nSyrup", //7
+    "White Rum\r\nCoconut Cream\r\nPineapple Juice", //8
+    "Tequila\r\nGrapefruit Soda\r\nSplash Lime\r\nSalt", //9
+    "Vodka\r\nLime Juice\r\nGinger Beer", //10
+    "Gin\r\nLemon Juice\r\nOJ\r\nHoney Syrup", //11
     "Plum Soju", //12
-    "Gin\nLemon Juice\nSyrup\nBitters\nSoda", //13
-    "Rum\nLime Juice\nSyrup\nMint\nSoda", //14
-    "Gin\nFlower Extract\nTonic", //15
-    "Gin\nLemon Juice\nSyrup\nBitters\nRosemary\nGrapefruit Soda", //16
-    "Whiskey\nSugar Cube\nBitters\nSoda", //17
-    "Dark Rum\nPineapple Juice\nOJ\nLemon Juice\nGrenadine\nSyrup\nBitters", //18
-    "Dark Rum\nBitters\nPumpkin Spice Syrup", //19
-    "Whiskey\nPeach Schnapps\nMalibu\nRed Bull", //20
-    "Whiskey\nRed Vermouth\nBitters", //21
-    "Vodka\nCoffee Liqueur", //22
-    "Dark Rum\nCompari\nPineapple Juice\nLime Juice\nSyrup", //23
-    "Dark Rum\nLime Juice\nSyrup\nBitters\nSoda/Champagne", //24
-    "Dark Rum\nGinger Beer", //25
-    "Whiskey\nSyrup\nMint", //26
-    "Whiskey\nHoney Syrup\nLemon Juice", //27
-    "Light Rum\nBrandy\nOverproof\nOJ\nLemon Juice\nOrgeat", //28
-    "Whiskey\nLemon Juice\nSyrup", //29
-    "Overproof Rum\nMalibu\nPineapple Juice\nCream of Coconut\nOJ\nNutmeg", //30
-    "Black Rum\nMezcal\nPineapple Juice\nLime Juice\nCompari\nSyrup", //31
-    "Whiskey\nPeach Liqueur\nLemon Juice\nSyrup" //32
+    "Gin\r\nLemon Juice\r\nSyrup\r\nBitters\r\nSoda", //13
+    "Rum\r\nLime Juice\r\nSyrup\r\nMint\r\nSoda", //14
+    "Gin\r\nFlower Extract\r\nTonic", //15
+    "Gin\r\nLemon Juice\r\nSyrup\r\nBitters\r\nRosemary\r\nGrapefruit Soda", //16
+    "Whiskey\r\nSugar Cube\r\nBitters\r\nSoda", //17
+    "Dark Rum\r\nPineapple Juice\r\nOJ\r\nLemon Juice\r\nGrenadine\r\nSyrup\r\nBitters", //18
+    "Dark Rum\r\nBitters\r\nPumpkin Spice Syrup", //19
+    "Whiskey\r\nPeach Schnapps\r\nMalibu\r\nRed Bull", //20
+    "Whiskey\r\nRed Vermouth\r\nBitters", //21
+    "Vodka\r\nCoffee Liqueur", //22
+    "Dark Rum\r\nCompari\r\nPineapple Juice\r\nLime Juice\r\nSyrup", //23
+    "Dark Rum\r\nLime Juice\r\nSyrup\r\nBitters\r\nSoda/Champagne", //24
+    "Dark Rum\r\nGinger Beer", //25
+    "Whiskey\r\nSyrup\r\nMint", //26
+    "Whiskey\r\nHoney Syrup\r\nLemon Juice", //27
+    "Light Rum\r\nBrandy\r\nOverproof\r\nOJ\r\nLemon Juice\r\nOrgeat", //28
+    "Whiskey\r\nLemon Juice\r\nSyrup", //29
+    "Overproof Rum\r\nMalibu\r\nPineapple Juice\r\nCream of Coconut\r\nOJ\r\nNutmeg", //30
+    "Black Rum\r\nMezcal\r\nPineapple Juice\r\nLime Juice\r\nCompari\r\nSyrup", //31
+    "Whiskey\r\nPeach Liqueur\r\nLemon Juice\r\nSyrup" //32
 ]

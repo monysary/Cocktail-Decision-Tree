@@ -26,7 +26,35 @@ body {
 .heading {
     font-size: 50px;
     color: #C5C5C5;
-    margin-bottom: 140px;
+    padding-bottom: 5px;
+}
+
+.heading-underline {
+    border-bottom: 3px solid #CD9A56;
+    display: inline-block;
+}
+
+/* Ingredients box */
+.ingred-box-collapse {
+    font-size: 20px;
+    color: #C5C5C5;
+    line-height: 40px;
+    white-space: pre-line;
+    margin: 5px auto 0px auto;
+    width: 300px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.ingred-box-expand {
+    font-size: 20px;
+    color: #C5C5C5;
+    line-height: 40px;
+    white-space: pre-line;
+    margin: 5px auto 0px auto;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
 }
 
 /* Buttons */
@@ -34,6 +62,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 200px;
+    margin-top: 140px;
+    align-self: start;
 }
 
 .button-style {
@@ -59,7 +89,8 @@ body {
     border-radius: 5px;
 }
 
-button:hover {
+button:hover,
+.heading:hover {
     cursor: pointer;
 }
 
@@ -84,9 +115,20 @@ button:hover {
     transform: translateY(-100%);
 }
 
-/* Display none */
+/* Change display classes */
 .display-none {
     display: none;
+}
+
+.grid-collapse {
+    display: grid;
+    grid-template-rows: 0px auto;
+}
+
+.main-desktop-grid {
+    display: grid;
+    grid-template-rows: 358px auto;
+    align-items: end;
 }
 
 /* Mobile response media query */
@@ -94,6 +136,10 @@ button:hover {
     body {
         display: grid;
         grid-template-rows: 340px auto;
+    }
+
+    main {
+        /* display: grid; */
     }
     
     .title {
@@ -107,13 +153,13 @@ button:hover {
     
     .heading {
         font-size: 40px;
-        margin-bottom: 80px;
     }
     
     .button-area {
         flex-direction: column;
         align-items: center;
         gap: 80px;
+        margin-top: 80px;
     }
 
     .button-final {

@@ -1,4 +1,6 @@
 // DOM variables
+const body = document.getElementsByTagName("body");
+const main = document.getElementsByTagName("main");
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
 const textBtn1 = document.getElementById("textBtn1")
@@ -7,6 +9,8 @@ const finalDrink = document.getElementById("final-drink");
 const restartBtn = document.getElementById("restart-btn");
 const title = document.getElementById("title");
 const line = document.getElementById("line");
+const ingredList = document.getElementById("ingred-list");
+const wrapper = document.getElementById("wrapper");
 
 // Index variables for pulling questions and drinks
 let choiceIndex = 0;
@@ -24,8 +28,6 @@ let textAnimateIndex = -1;
 
 // Display options function
 displayChoice = () => {
-    // option1.textContent = choices[choiceIndex][0];
-    // option2.textContent = choices[choiceIndex][1];
     textBtn1.classList.add(textAnimate[textAnimateIndex]);
     textBtn2.classList.add(textAnimate[textAnimateIndex]);
 }
@@ -44,10 +46,15 @@ displayQues = () => {
 
 // Display drink
 displayDrink = () => {
+    choiceIndex++;
     finalDrink.textContent = drinksArr[finalIndex];
+    finalDrink.classList.add("heading-underline")
     option1.setAttribute("class", "display-none");
     option2.setAttribute("class", "display-none");
     restartBtn.setAttribute("class", "button-style");
+    body[0].className = "grid-collapse";
+    main[0].className = "main-desktop-grid";
+    ingredList.textContent = drinksIngred[finalIndex];
 }
 
 // Restart button function
@@ -56,6 +63,15 @@ restartAdv = () => {
     finalIndex = 0;
     location.reload();
 }
+
+// Event listener for displayed drink name to displaying drink ingredients
+wrapper.addEventListener("click", () => {
+    if (ingredList.className === "ingred-box-collapse") {
+        ingredList.setAttribute("class", "ingred-box-expand");
+    } else {
+        ingredList.setAttribute("class", "ingred-box-collapse");
+    }
+})
 
 // Event listener for pressing restart button
 restartBtn.addEventListener("click", () => {
