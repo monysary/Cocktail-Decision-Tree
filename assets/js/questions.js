@@ -70,14 +70,14 @@ const drinksIngred = [
     "White Rum\r\nCoconut Cream\r\nPineapple Juice", //8
     "Tequila\r\nGrapefruit Soda\r\nSplash Lime\r\nSalt", //9
     "Vodka\r\nLime Juice\r\nGinger Beer", //10
-    "Gin\r\nLemon Juice\r\nOJ\r\nHoney Syrup", //11
+    "Gin\r\nLemon Juice\r\nOrange Juice\r\nHoney Syrup", //11
     "Plum Soju", //12
     "Gin\r\nLemon Juice\r\nSyrup\r\nBitters\r\nSoda", //13
     "Rum\r\nLime Juice\r\nSyrup\r\nMint\r\nSoda", //14
     "Gin\r\nFlower Extract\r\nTonic", //15
     "Gin\r\nLemon Juice\r\nSyrup\r\nBitters\r\nRosemary\r\nGrapefruit Soda", //16
     "Whiskey\r\nSugar Cube\r\nBitters\r\nSoda", //17
-    "Dark Rum\r\nPineapple Juice\r\nOJ\r\nLemon Juice\r\nGrenadine\r\nSyrup\r\nBitters", //18
+    "Dark Rum\r\nPineapple Juice\r\nOrange Juice\r\nLemon Juice\r\nGrenadine\r\nSyrup\r\nBitters", //18
     "Dark Rum\r\nBitters\r\nPumpkin Spice Syrup", //19
     "Whiskey\r\nPeach Schnapps\r\nMalibu\r\nRed Bull", //20
     "Whiskey\r\nRed Vermouth\r\nBitters", //21
@@ -87,9 +87,9 @@ const drinksIngred = [
     "Dark Rum\r\nGinger Beer", //25
     "Whiskey\r\nSyrup\r\nMint", //26
     "Whiskey\r\nHoney Syrup\r\nLemon Juice", //27
-    "Light Rum\r\nBrandy\r\nOverproof\r\nOJ\r\nLemon Juice\r\nOrgeat", //28
+    "Light Rum\r\nBrandy\r\nOverproof\r\nOrange Juice\r\nLemon Juice\r\nOrgeat", //28
     "Whiskey\r\nLemon Juice\r\nSyrup", //29
-    "Overproof Rum\r\nMalibu\r\nPineapple Juice\r\nCream of Coconut\r\nOJ\r\nNutmeg", //30
+    "Overproof Rum\r\nMalibu\r\nPineapple Juice\r\nCream of Coconut\r\nOrange Juice\r\nNutmeg", //30
     "Black Rum\r\nMezcal\r\nPineapple Juice\r\nLime Juice\r\nCompari\r\nSyrup", //31
     "Whiskey\r\nPeach Liqueur\r\nLemon Juice\r\nSyrup" //32
 ]
