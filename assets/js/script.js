@@ -57,13 +57,6 @@ displayDrink = () => {
     ingredList.textContent = drinksIngred[finalIndex];
 }
 
-// Restart button function
-restartAdv = () => {
-    choiceIndex = 0;
-    finalIndex = 0;
-    location.reload();
-}
-
 // Event listener for displayed drink name to displaying drink ingredients
 wrapper.addEventListener("click", () => {
     if (ingredList.className === "ingred-box-collapse") {
@@ -75,7 +68,7 @@ wrapper.addEventListener("click", () => {
 
 // Event listener for pressing restart button
 restartBtn.addEventListener("click", () => {
-    restartAdv()
+    location.reload();
 })
 
 // Event listener for choosing left option
