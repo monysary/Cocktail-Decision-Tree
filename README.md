@@ -4,7 +4,7 @@
 Are you an amateur mixologist? Do you always have people asking you to make you something, but they're unsure what? Well look no further! The DRINK YOU OWN ADVENTURE website will help decide for your poor unfortunate friend.
 
 ## Installation
-Launch the website on any browser using the following link: 
+Launch the website on any browser using the following link: https://monysary.github.io/Cocktail-Decision-Tree/
 
 ## Usage
 The DRINK YOUR OWN ADVENTURE features a simple and easy to use UI for when you're sober or tipsy. The user simply selects their choice of "poisons" which then leads them to a final choice. The final choice will ultimately lead the user to their fated drink for mixologists to make.
