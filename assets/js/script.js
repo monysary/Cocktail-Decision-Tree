@@ -77,19 +77,19 @@ option1.addEventListener("click", () => {
     if (choiceIndex === 0) {
         finalIndex++;
         choiceIndex++;
-        setTimeout(displayChoice, 100);
+        setTimeout(displayChoice, 200);
     } else if (choiceIndex > 0 && choiceIndex < 4) {
         finalIndex *= 2;
         finalIndex--;
-        setTimeout(displayChoice, 100);
+        setTimeout(displayChoice, 200);
     } else if (choiceIndex === 5) {
         finalIndex *= 2;
-        setTimeout(displayDrink, 100);
+        setTimeout(displayDrink, 200);
         return
     } else {
         finalIndex *= 2;
         finalIndex--;
-        displayQues()
+        setTimeout(displayQues, 200);
     }
     choiceIndex++;
 })
@@ -100,18 +100,18 @@ option2.addEventListener("click", () => {
     if (choiceIndex === 0) {
         finalIndex += 2;
         choiceIndex++;
-        setTimeout(displayChoice, 100);
+        setTimeout(displayChoice, 200);
     } else if (choiceIndex > 0 && choiceIndex < 4) {
         finalIndex *= 2;
-        setTimeout(displayChoice, 100);
+        setTimeout(displayChoice, 200);
     } else if (choiceIndex === 5) {
         finalIndex *= 2;
         finalIndex++;
-        setTimeout(displayDrink, 100);
+        setTimeout(displayDrink, 200);
         return
     } else {
         finalIndex *= 2;
-        displayQues()
+        setTimeout(displayQues, 200);
     }
     choiceIndex++;
 })
