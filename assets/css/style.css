@@ -37,6 +37,7 @@ body {
 #wrapper {
     display: inline-block;
     margin: 0 auto;
+    transition: 0.1s;
 }
 
 /* Ingredients box */
@@ -135,7 +136,8 @@ button:hover,
 }
 
 #wrapper:active {
-    transform: scale(0.9);
+    transform: scale(0.8);
+    transition: 0.1s;
 }
 
 /* Change display classes */
