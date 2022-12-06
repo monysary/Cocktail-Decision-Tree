@@ -59,10 +59,12 @@ displayDrink = () => {
 
 // Event listener for displayed drink name to displaying drink ingredients
 wrapper.addEventListener("click", () => {
-    if (ingredList.className === "ingred-box box-collapse") {
-        ingredList.setAttribute("class", "ingred-box box-expand");
-    } else {
-        ingredList.setAttribute("class", "ingred-box box-collapse");
+    if (choiceIndex === 6) {
+        if (ingredList.className === "ingred-box box-collapse") {
+            ingredList.setAttribute("class", "ingred-box box-expand");
+        } else {
+            ingredList.setAttribute("class", "ingred-box box-collapse");
+        }
     }
 })
 
