@@ -61,7 +61,7 @@ displayDrink = () => {
 wrapper.addEventListener("click", () => {
     if (choiceIndex === 6) {
         if (ingredList.className === "ingred-box box-collapse") {
-            ingredList.setAttribute("class", "ingred-box box-expand");
+            setTimeout(() => ingredList.setAttribute("class", "ingred-box box-expand"), 200)
         } else {
             ingredList.setAttribute("class", "ingred-box box-collapse");
         }
@@ -86,7 +86,7 @@ option1.addEventListener("click", () => {
         setTimeout(displayChoice, 200);
     } else if (choiceIndex === 5) {
         finalIndex *= 2;
-        setTimeout(displayDrink, 200);
+        setTimeout(displayDrink, 300);
         return
     } else {
         finalIndex *= 2;
@@ -109,7 +109,7 @@ option2.addEventListener("click", () => {
     } else if (choiceIndex === 5) {
         finalIndex *= 2;
         finalIndex++;
-        setTimeout(displayDrink, 200);
+        setTimeout(displayDrink, 300);
         return
     } else {
         finalIndex *= 2;
