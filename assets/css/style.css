@@ -122,6 +122,7 @@ button:hover,
 .button-style:active {
     background-image: none;
     background-color: rgba(179, 122, 53, 1);
+    transform: scale(0.9);
     font-size: 25px;
 }
 
