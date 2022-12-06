@@ -61,7 +61,7 @@ displayDrink = () => {
 wrapper.addEventListener("click", () => {
     if (choiceIndex === 6) {
         if (ingredList.className === "ingred-box box-collapse") {
-            setTimeout(() => ingredList.setAttribute("class", "ingred-box box-expand"), 200)
+            setTimeout(() => ingredList.setAttribute("class", "ingred-box box-expand"), 250)
         } else {
             ingredList.setAttribute("class", "ingred-box box-collapse");
         }
