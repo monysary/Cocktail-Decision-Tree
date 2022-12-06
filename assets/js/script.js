@@ -89,7 +89,7 @@ option1.addEventListener("click", () => {
     } else {
         finalIndex *= 2;
         finalIndex--;
-        setTimeout(displayQues, 200);
+        setTimeout(displayQues, 300);
     }
     choiceIndex++;
 })
@@ -111,7 +111,7 @@ option2.addEventListener("click", () => {
         return
     } else {
         finalIndex *= 2;
-        setTimeout(displayQues, 200);
+        setTimeout(displayQues, 300);
     }
     choiceIndex++;
 })
